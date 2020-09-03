@@ -1,0 +1,146 @@
+/*PALETA DE COLORES*/
+/*FUENTES*/
+/*GENERAL*/
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.only-mobile {
+  display: block;
+}
+
+.only-desktop {
+  display: none !important;
+}
+
+.line {
+  margin: 10px 0;
+  width: 100%;
+  height: 1px;
+  border: 1px solid #fff;
+}
+
+.wrap {
+  width: 95%;
+  margin: 0 auto;
+}
+
+/*COLUMNAS*/
+.cols {
+  display: flex;
+}
+
+.col-1 {
+  flex-grow: 1;
+}
+
+.col-2 {
+  flex-grow: 2;
+}
+
+.col-3 {
+  flex-grow: 3;
+}
+
+.col-4 {
+  flex-grow: 4;
+}
+
+/*---------------------------------------------*/
+/*Header*/
+header {
+  height: 70px;
+  background: #333333;
+}
+header .cabecera {
+  height: inherit;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+header .cabecera .logo {
+  position: absolute;
+  left: 0;
+}
+header .cabecera .ic-menu {
+  position: absolute;
+  right: 0;
+}
+header .menu {
+  display: none;
+}
+
+.hero {
+  position: relative;
+}
+.hero img {
+  width: 100%;
+}
+.hero .texto-hero {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-100%);
+}
+.hero .texto-hero h1 {
+  font-size: 0.9em;
+  color: #fff;
+}
+.hero .texto-hero label {
+  font-size: 0.65em;
+  color: 0.65em;
+  color: #fff;
+}
+.hero .texto-hero a {
+  font-size: 0.65em;
+  position: absolute;
+  display: block;
+  left: 20%;
+  margin-top: 15px;
+  border: 1px solid #fff;
+  padding: 8px;
+}
+
+.seccion-1 h2 {
+  font-size: 0.9em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.seccion-1 p {
+  text-align: center;
+}
+.seccion-1 h3 {
+  font-size: 0.85em;
+  text-align: center;
+}
+.seccion-1 .blog .container-blog {
+  margin-bottom: 20px;
+}
+.seccion-1 .blog .container-blog img {
+  width: 100%;
+}
+.seccion-1 .blog .container-blog p {
+  font-weight: bold;
+  font-size: 0.85em;
+}
+
+.seccion-2 .mascotas .mascota {
+  margin-bottom: 10px;
+}
+.seccion-2 .mascotas .mascota img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+.seccion-2 .mascotas .mascota label {
+  display: block;
+  text-align: center;
+}
+
+/*# sourceMappingURL=estilos.css.map */
