@@ -1,10 +1,7 @@
 /*PALETA DE COLORES*/
-$color1: #000;
-$color2: #333333;
+$color1: #333333;
+$color2: #fff;
 $color3: #000;
-$color4: #000;
-$color5: #000;
-$color6: #fff;
 
 /*FUENTES*/
 $tituloHero: 0.9em;
@@ -21,7 +18,6 @@ body {
 }
 a {
     text-decoration: none;
-    color: $color6;
 }
 .only-mobile {
     display: block;
@@ -57,12 +53,27 @@ a {
     flex-grow: 4;
 }
 
+/*ICONOS*/
+.ic-menu {
+    background: #fff;
+    display: block;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    background-image: url("../img/iconos/menu.svg");
+    background-repeat: no-repeat;
+}
+
+.icono{
+    color: $color2;
+}
+
 /*---------------------------------------------*/
 
 /*Header*/
 header {
     height: 70px;
-    background: $color2;
+    background: $color1;
 
     .cabecera {
         height: inherit;
@@ -71,10 +82,15 @@ header {
         position: relative;
         .logo {
             position: absolute;
+            top: 20px;
             left: 0;
+            .icono{
+                font-size: 1.5em;
+            }
         }
         .ic-menu {
             position: absolute;
+            top: 15px;
             right: 0;
         }
     }
@@ -97,12 +113,12 @@ header {
         }
         h1 {
             font-size: $tituloHero;
-            color: $color6;
+            color: $color2;
         }
         label {
             font-size: $labelHero;
             color: $labelHero;
-            color: $color6;
+            color: $color2;
         }
         a {
             font-size: $labelHero;
@@ -110,8 +126,9 @@ header {
             display: block;
             left: 20%;
             margin-top: 15px;
-            border: 1px solid $color6;
+            border: 1px solid $color2;
             padding: 8px;
+            color: $color2;
         }
     }
 }
@@ -145,22 +162,50 @@ header {
     }
 }
 
-.seccion-2{
-    .mascotas{
-        .mascota{
-            &{
-                margin-bottom: 10px;;
+.seccion-2 {
+    & {
+        background: $color1;
+        padding: 10px 0;
+    }
+    p {
+        color: $color2;
+        text-align: center;
+    }
+    .mascotas {
+        .mascota {
+            & {
+                margin-bottom: 10px;
             }
 
-            img{
+            img {
                 display: block;
                 margin: 0 auto;
                 border-radius: 50%;
             }
-            label{
+            label {
                 display: block;
                 text-align: center;
+                color: $color2;
+                margin-top: 10px;
+                margin-bottom: 15px;
             }
+        }
+    }
+}
+
+footer {
+    & {
+        position: relative;
+        background: $color2;
+        padding: 10px 0;
+    }
+    label {
+        display: block;
+        text-align: center;
+        color: $color3;
+        a {
+            color: $color3;
+            font-weight: bold;
         }
     }
 }

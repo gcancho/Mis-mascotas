@@ -9,7 +9,6 @@ body {
 
 a {
   text-decoration: none;
-  color: #fff;
 }
 
 .only-mobile {
@@ -53,6 +52,21 @@ a {
   flex-grow: 4;
 }
 
+/*ICONOS*/
+.ic-menu {
+  background: #fff;
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+  background-image: url("../img/iconos/menu.svg");
+  background-repeat: no-repeat;
+}
+
+.icono {
+  color: #fff;
+}
+
 /*---------------------------------------------*/
 /*Header*/
 header {
@@ -67,10 +81,15 @@ header .cabecera {
 }
 header .cabecera .logo {
   position: absolute;
+  top: 20px;
   left: 0;
+}
+header .cabecera .logo .icono {
+  font-size: 1.5em;
 }
 header .cabecera .ic-menu {
   position: absolute;
+  top: 15px;
   right: 0;
 }
 header .menu {
@@ -105,6 +124,7 @@ header .menu {
   margin-top: 15px;
   border: 1px solid #fff;
   padding: 8px;
+  color: #fff;
 }
 
 .seccion-1 h2 {
@@ -130,6 +150,14 @@ header .menu {
   font-size: 0.85em;
 }
 
+.seccion-2 {
+  background: #333333;
+  padding: 10px 0;
+}
+.seccion-2 p {
+  color: #fff;
+  text-align: center;
+}
 .seccion-2 .mascotas .mascota {
   margin-bottom: 10px;
 }
@@ -141,6 +169,24 @@ header .menu {
 .seccion-2 .mascotas .mascota label {
   display: block;
   text-align: center;
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+footer {
+  position: relative;
+  background: #fff;
+  padding: 10px 0;
+}
+footer label {
+  display: block;
+  text-align: center;
+  color: #000;
+}
+footer label a {
+  color: #000;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=estilos.css.map */
