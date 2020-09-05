@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -43,7 +44,7 @@ ul {
 }
 
 .only-desktop {
-  display: none !important;
+  display: none;
 }
 
 .line {
@@ -133,6 +134,8 @@ header .menu.active {
 header .menu ul {
   background: rgba(55, 55, 55, 0.9);
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 header .menu ul li {
   height: 12vh;
@@ -145,6 +148,7 @@ header .menu ul li a {
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 1.2em;
 }
 header .menu ul li a:hover {
   background: #333333;
@@ -236,6 +240,7 @@ footer label {
   display: block;
   text-align: center;
   color: #000;
+  font-size: 0.84em;
 }
 footer label a {
   color: #000;
@@ -282,12 +287,20 @@ footer label a {
     font-size: 0.78em;
   }
 
+  .seccion-1 h3 {
+    font-size: 0.96em;
+  }
+
   .seccion-2 .mascotas {
     display: flex;
     flex-wrap: wrap;
   }
   .seccion-2 .mascotas .mascota {
     flex-grow: 1;
+  }
+
+  footer label {
+    font-size: 1.08em;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -312,8 +325,11 @@ footer label a {
   }
 
   header {
-    background: yellow;
     height: 80px;
+  }
+
+  .seccion-1 h3 {
+    font-size: 1.28em;
   }
 
   .icono {
@@ -348,6 +364,14 @@ footer label a {
   }
 }
 @media only screen and (min-width: 1024px) {
+  .only-mobile {
+    display: none;
+  }
+
+  .only-desktop {
+    display: block;
+  }
+
   p {
     font-size: 1.44em;
   }
@@ -365,8 +389,39 @@ footer label a {
   }
 
   header {
-    background: green;
+    background: #333333;
     height: 90px;
+  }
+  header .cabecera .redes-sociales {
+    position: absolute;
+    right: 0;
+  }
+  header .cabecera .redes-sociales i {
+    color: #fff;
+    font-size: 63px;
+    margin-left: 15px;
+    cursor: pointer;
+  }
+  header .menu {
+    left: initial;
+  }
+  header .menu ul {
+    flex-direction: row;
+    justify-content: space-around;
+    background: rgba(255, 255, 255, 0.3);
+  }
+  header .menu ul li {
+    flex-grow: 1;
+  }
+  header .menu ul li a {
+    color: #fff;
+  }
+  header .menu ul li a:hover {
+    background: rgba(255, 255, 255, 0.35);
+  }
+
+  .seccion-1 h3 {
+    font-size: 1.44em;
   }
 
   .icono {
@@ -387,17 +442,18 @@ footer label a {
     object-fit: cover;
   }
   .hero .texto-hero {
-    top: 30%;
+    top: 50%;
+    transform: translateY(-50%);
     left: 5%;
   }
   .hero .texto-hero h1 {
-    font-size: 1.62em;
+    font-size: 2.43em;
   }
   .hero .texto-hero label {
-    font-size: 1.17em;
+    font-size: 1.404em;
   }
   .hero .texto-hero a {
-    font-size: 1.17em;
+    font-size: 1.404em;
   }
 
   .seccion-1 {
@@ -413,6 +469,22 @@ footer label a {
 
   .seccion-2 {
     margin: 20px 0;
+    padding: 40px 0;
+  }
+
+  footer .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer .wrap label {
+    font-size: 1.62em;
+  }
+  footer .wrap .nombre-creador:hover {
+    color: blue;
+  }
+  footer .wrap .nombre-creador:hover a {
+    color: blue;
   }
 }
 

@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body {
     font-family: $fuente;
@@ -33,7 +34,7 @@ ul {
     display: block;
 }
 .only-desktop {
-    display: none !important;
+    display: none;
 }
 .line {
     margin: 10px 0;
