@@ -218,6 +218,11 @@
             top: 50%;
             transform: translateY(-50%);
             left: 5%;
+            a {
+                &:hover {
+                    background: rgba(255, 255, 255, 0.2);
+                }
+            }
             h1 {
                 font-size: $tituloHero * 1.5;
             }
@@ -253,10 +258,9 @@
                 font-size: $texto * 1.5;
             }
             .nombre-creador {
-                &:hover {
-                    color: blue;
-                    a{
-                        color: blue;
+                a {
+                    &:hover {
+                        color: rgb(58, 133, 143)
                     }
                 }
             }
