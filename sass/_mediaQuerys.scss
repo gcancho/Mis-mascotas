@@ -211,7 +211,7 @@
     }
     .hero {
         img {
-            max-height: 490px;
+            max-height: 530px;
             object-fit: cover;
         }
         .texto-hero {
@@ -245,7 +245,6 @@
         }
     }
     .seccion-2 {
-        margin: 20px 0;
         padding: 40px 0;
     }
     footer {
@@ -255,7 +254,7 @@
             justify-content: space-between;
             align-items: center;
             label {
-                font-size: $texto * 1.5;
+                font-size: $texto * 1;
             }
             .nombre-creador {
                 a {
