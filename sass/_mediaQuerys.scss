@@ -13,6 +13,9 @@
     p {
         font-size: $p;
     }
+    label {
+        font-size: $texto;
+    }
     h1 {
         font-size: $h1;
     }
@@ -22,21 +25,25 @@
     h3 {
         font-size: $h1;
     }
-    header {
-        background: yellow;
-        height: $alturaHeader;
-    }
-    .icono {
-        font-size: $tituloHeader;
-    }
-    .ic-menu {
-        width: $tamanoIconoMenu;
-        height: $tamanoIconoMenu;
-    }
+    // header {
+    //     background: yellow;
+    //     height: $alturaHeader;
+    // }
+    // .icono {
+    //     font-size: $tituloHeader;
+    // }
+    // .ic-menu {
+    //     width: $tamanoIconoMenu;
+    //     height: $tamanoIconoMenu;
+    // }
     .wrap {
         width: 70%;
     }
     .hero {
+        img {
+            max-height: 250px;
+            object-fit: cover;
+        }
         .texto-hero {
             top: 30%;
             left: 5%;
@@ -45,6 +52,15 @@
             }
             label {
                 font-size: $labelHero;
+            }
+        }
+    }
+    .seccion-2 {
+        .mascotas {
+            display: flex;
+            flex-wrap: wrap;
+            .mascota {
+                flex-grow: 1;
             }
         }
     }
@@ -65,6 +81,9 @@
     p {
         font-size: $p;
     }
+    label {
+        font-size: $texto;
+    }
     h1 {
         font-size: $h1;
     }
@@ -89,13 +108,21 @@
         width: 70%;
     }
     .hero {
+        img {
+            max-height: 350px;
+            object-fit: cover;
+        }
         .texto-hero {
-            top: 30%;
+            top: 50%;
             left: 5%;
+            // transform: translateY(-50%);
             h1 {
                 font-size: $tituloHero;
             }
             label {
+                font-size: $labelHero;
+            }
+            a{
                 font-size: $labelHero;
             }
         }
@@ -104,7 +131,7 @@
 @media only screen and (min-width: $laptop) {
     $alturaHeader: $alturaHeader * $mult3;
     $tituloHeader: $tituloHeader * $mult3;
-    $tamanoIconoMenu: $tamanoIconoMenu * $mult1;
+    $tamanoIconoMenu: $tamanoIconoMenu * $mult3;
     $tituloHero: $tituloHero * $mult3;
     $labelHero: $labelHero * $mult3;
     $h1: $h1 * $mult3;
@@ -137,9 +164,13 @@
         height: $tamanoIconoMenu;
     }
     .wrap {
-        width: 70%;
+        width: 90%;
     }
-    .hero {
+    .hero { 
+        img{
+            max-height: 490px;
+            object-fit: cover;
+        }
         .texto-hero {
             top: 30%;
             left: 5%;
@@ -149,6 +180,23 @@
             label {
                 font-size: $labelHero;
             }
+            a{
+                font-size: $labelHero;
+            }
         }
+    }
+    .seccion-1{
+        margin: 20px 0;
+        .blog{
+            display: flex;
+            .container-blog{
+                flex-grow: 1;
+                margin: 0 10px;
+            }
+        }
+    }
+    .seccion-2{
+        margin: 20px 0;
+
     }
 }
