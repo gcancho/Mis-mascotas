@@ -1,0 +1,64 @@
+/*Header*/
+header {
+    height: $alturaHeader;
+    background: $color1;
+
+    .cabecera {
+        display: flex;
+        align-items: center;
+        height: inherit;
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        .logo {
+            position: absolute;
+            left: 0;
+        }
+        .ic-menu {
+            position: absolute;
+            right: 0;
+        }
+    }
+
+    .menu {
+        & {
+            position: absolute;
+            z-index: 100;
+            // display: none;
+            display: block;
+            left: -100%;
+            width: 100%;
+            transition: all $tiempoDeslizamientoMenu;
+        }
+        &.active {
+            display: block;
+            transform: translateX(100%);
+            transition: all $tiempoDeslizamientoMenu;
+        }
+        ul {
+            & {
+                background: $color4;
+                text-align: center;
+            }
+            li {
+                & {
+                    height: 12vh;
+                }
+                a {
+                    & {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-bottom: 1px solid $color5;
+                    }
+                    &:hover {
+                        background: $color1;
+                    }
+                }
+            }
+        }
+    }
+}

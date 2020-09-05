@@ -1,0 +1,154 @@
+@media only screen and (min-width: $celularHorizontal) {
+    $alturaHeader: $alturaHeader * $mult1;
+    $tituloHeader: $tituloHeader * $mult1;
+    $tamanoIconoMenu: $tamanoIconoMenu * $mult1;
+    $tituloHero: $tituloHero * $mult1;
+    $labelHero: $labelHero * $mult1;
+    $h1: $h1 * $mult1;
+    $h2: $h2 * $mult1;
+    $h3: $h3 * $mult1;
+    $p: $p * $mult1;
+    $texto: $texto * $mult1;
+
+    p {
+        font-size: $p;
+    }
+    h1 {
+        font-size: $h1;
+    }
+    h2 {
+        font-size: $h1;
+    }
+    h3 {
+        font-size: $h1;
+    }
+    header {
+        background: yellow;
+        height: $alturaHeader;
+    }
+    .icono {
+        font-size: $tituloHeader;
+    }
+    .ic-menu {
+        width: $tamanoIconoMenu;
+        height: $tamanoIconoMenu;
+    }
+    .wrap {
+        width: 70%;
+    }
+    .hero {
+        .texto-hero {
+            top: 30%;
+            left: 5%;
+            h1 {
+                font-size: $tituloHero;
+            }
+            label {
+                font-size: $labelHero;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $tablet) {
+    $alturaHeader: $alturaHeader * $mult2;
+    $tituloHeader: $tituloHeader * $mult2;
+    $tamanoIconoMenu: $tamanoIconoMenu * $mult2;
+    $tituloHero: $tituloHero * $mult2;
+    $labelHero: $labelHero * $mult2;
+    $h1: $h1 * $mult2;
+    $h2: $h2 * $mult2;
+    $h3: $h3 * $mult2;
+    $p: $p * $mult2;
+    $texto: $texto * $mult2;
+
+    p {
+        font-size: $p;
+    }
+    h1 {
+        font-size: $h1;
+    }
+    h2 {
+        font-size: $h1;
+    }
+    h3 {
+        font-size: $h1;
+    }
+    header {
+        background: yellow;
+        height: $alturaHeader;
+    }
+    .icono {
+        font-size: $tituloHeader;
+    }
+    .ic-menu {
+        width: $tamanoIconoMenu;
+        height: $tamanoIconoMenu;
+    }
+    .wrap {
+        width: 70%;
+    }
+    .hero {
+        .texto-hero {
+            top: 30%;
+            left: 5%;
+            h1 {
+                font-size: $tituloHero;
+            }
+            label {
+                font-size: $labelHero;
+            }
+        }
+    }
+}
+@media only screen and (min-width: $laptop) {
+    $alturaHeader: $alturaHeader * $mult3;
+    $tituloHeader: $tituloHeader * $mult3;
+    $tamanoIconoMenu: $tamanoIconoMenu * $mult1;
+    $tituloHero: $tituloHero * $mult3;
+    $labelHero: $labelHero * $mult3;
+    $h1: $h1 * $mult3;
+    $h2: $h2 * $mult3;
+    $h3: $h3 * $mult3;
+    $p: $p * $mult3;
+    $texto: $texto * $mult3;
+
+    p {
+        font-size: $p;
+    }
+    h1 {
+        font-size: $h1;
+    }
+    h2 {
+        font-size: $h1;
+    }
+    h3 {
+        font-size: $h1;
+    }
+    header {
+        background: green;
+        height: $alturaHeader;
+    }
+    .icono {
+        font-size: $tituloHeader;
+    }
+    .ic-menu {
+        width: $tamanoIconoMenu;
+        height: $tamanoIconoMenu;
+    }
+    .wrap {
+        width: 70%;
+    }
+    .hero {
+        .texto-hero {
+            top: 30%;
+            left: 5%;
+            h1 {
+                font-size: $tituloHero;
+            }
+            label {
+                font-size: $labelHero;
+            }
+        }
+    }
+}
